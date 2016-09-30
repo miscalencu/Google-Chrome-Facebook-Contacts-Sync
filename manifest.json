@@ -8,8 +8,8 @@
   "content_security_policy": "script-src 'self' https://www.google-analytics.com https://wwww.facebook.com; object-src 'self'",
   "content_scripts": [
     {
-      "matches": ["https://www.facebook.com/*"],
-      "js": [ "js/jquery-3.1.0.min.js", "js/core.js", "js/in.js" ]
+      "matches": [ "https://www.facebook.com/*" ],
+      "js": [ "js/in.js" ]
     }
   ],
   "browser_action": {
@@ -19,5 +19,9 @@
   "icons": {
     //"128": "images/icon_128.png",
     //"16": "images/icon.png"
-  }
+  },
+  "web_accessible_resources": [
+    "images/loading.gif"
+  ]
+
 }
