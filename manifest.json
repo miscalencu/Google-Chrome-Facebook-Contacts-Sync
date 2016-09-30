@@ -1,6 +1,6 @@
 {
-  "name": "Facebook Contacts Sync",
-  "description": "Syncs Facebook Contacts with Google Contacts",
+  "name": "Google Contacts Sync",
+  "description": "Syncs Google Contacts with Social Media (Facebook, LinkedIn, etc..) Contacts",
   "version": "0.01",
   "manifest_version": 2,
   "options_page": "options.html",
@@ -9,12 +9,12 @@
   "content_scripts": [
     {
       "matches": [ "https://www.facebook.com/*" ],
-      "js": [ "js/in.js" ]
+      "js": [ "js/facebook_in.js" ]
     }
   ],
   "browser_action": {
     //"default_icon": "images/icon.png",
-    "default_title": "Faceboook Contacts Sync"
+    "default_title": "Google Contacts Sync"
   },
   "icons": {
     //"128": "images/icon_128.png",
@@ -23,5 +23,4 @@
   "web_accessible_resources": [
     "images/loading.gif"
   ]
-
 }
